@@ -9,6 +9,12 @@ function App() {
     { id: 3, name: "France", gold: 0, silver: 2, bronze: 2 }
   ]);
 
+  const medals = useRef([
+    { id: 1, name: "gold" },
+    { id: 2, name: "silver" },
+    { id: 3, name: "bronze" },
+  ]);
+
   function incrementGold(countryId) {
     const countriesMutable = [...countriesImmutable];
     const idx = countriesMutable.findIndex((c) => c.id === countryId);
