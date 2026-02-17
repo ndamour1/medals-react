@@ -1,5 +1,40 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0 3px;
+  border-radius: 8px;
+  border: 1px solid #1a1a1a;
+  font-family: inherit;
+  background-color: #d9d9d9;
+  cursor: pointer;
+}
+button:hover:enabled {
+  background-color: #ffffff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #999;
+}
+
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -65,4 +100,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
